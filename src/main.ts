@@ -3,6 +3,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+import mxGraph from './mxgraph.init';
+
+console.log('MxGraph from main', mxGraph);
 
 if (environment.production) {
   enableProdMode();

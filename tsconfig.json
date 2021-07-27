@@ -7,6 +7,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitReturns": true,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
@@ -14,13 +15,19 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
+    "esModuleInterop": true,
     "target": "es2017",
     "module": "es2020",
     "lib": [
       "es2018",
       "dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/@typed-mxgraph"
     ]
   },
+  // "files": ["node_modules/@typed-mxgraph/typed-mxgraph/index.d.ts"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,

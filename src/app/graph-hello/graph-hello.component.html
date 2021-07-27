@@ -1,0 +1,13 @@
+<div style="display: flex; width: 100%; align-items: center; justify-content: center;" class="header">
+  <h2>Graph example</h2>
+</div>
+
+<div class="wrapper" style="display: flex; width: 100%; justify-content: center; align-items: center;">
+  <div #mxGraphContainer style="overflow:hidden;width:321px;height:241px;background:url('assets/editors/images/grid.gif')"></div>
+</div>
+
+<div *ngIf="!browserIsSupported" class="no-support">
+  <span>
+    Browser isn't supported!
+  </span>
+</div>
